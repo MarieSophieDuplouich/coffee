@@ -14,42 +14,38 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Balthazar&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Coffee</title>
 </head>
 
 <body>
-  <div class="header">
-    <h1><a href="#default" class="logo">Coffee</a></h1>
-    <div class="header-right">
-      <a class="active" href="#home">Home</a>
-      <a href="#coffee">Coffee</a>
-      <a href="#bakery">Bakery</a>
-      <a href="#shop">Shop</a>
-      <a href="#about">About</a>
-      <a href="#login">Login</a>
-      <input type="text" placeholder="Search..">
-    </div>
-
-
+  <header>
+    <nav>
+      <h1><a href="#default" class="logo">Coffee</a></h1>
+      <a href="/html/">HOME</a> |
+      <a href="/css/">BAKERY</a> |
+      <a href="/js/">SHOP</a> |
+      <a href="/python/">ABOUT</a>
+      <a href="">LOGIN</a>
+      <search>dufcuds</search>
+    </nav>
     <div class="Welcome-coffe">
       <h2>Welcome !
         WE SERVE the richest coffee in the city !
       </h2>
       <button type="button">Order Now</button>
     </div>
-  </div>
+    </div>
+  </header>
 
 
   <section class="icons-section">
-   <img src="assets/coffee.png" alt="coffee"><img src="assets/cold.png" alt="cold"><img src="assets/cup.png" alt="cup"><img src="assets/cake.png" alt="cake">
+    <img src="assets/coffee.png" alt="coffee"><img src="assets/cold.png" alt="cold"><img src="assets/cup.png"
+      alt="cup"><img src="assets/cake.png" alt="cake">
   </section>
 
-
-
-  <h3 style="text-align:center">OUR SPECIAL COFFEE</h3>
-
-
   <section class="hero-section">
+    <h3 style="text-align:center">OUR SPECIAL COFFEE</h3>
     <div class="gallery-coffee">
       <div class="card">
         <img
@@ -95,10 +91,11 @@
   </section>
 
 
-  <h3 style="text-align:center">OUR SPECIAL DESSERT</h3>
 
 
   <section class="hero-section">
+
+    <h3 style="text-align:center">OUR SPECIAL DESSERT</h3>
     <div class="gallery-desert">
       <div class="card">
         <img
@@ -142,40 +139,87 @@
       </div>
     </div>
   </section>
+  <section class="subscribe-section">
+    <img class="coffebeans1" src="assets/coffeebeans.png" alt="coffeebeans">
+    <form action="/action_page.php">
+      <div class="container">
+        <h2>Join in and get 15% Off!</h2>
+        <p> Lorem ipsum text about why you should subscribe to our newsletter blabla.</p>
+      </div>
 
+      <div class="container">
+        <input type="text" placeholder="Email address" name="mail" required>
+      </div>
+
+      <div class="container">
+        <input type="submit" value="Subscribe">
+      </div>
+    </form>
+    <img class="coffebeans2" src="assets/coffeebeans.png" alt="coffeebeans">
+  </section>
 
   <section class="reviews-section">
-   
+    <div class="container-reviews">
+      <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:90px">
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+    </div>
+
+    <div class="container-reviews">
+      <img src="/w3images/avatar_g2.jpg" alt="Avatar" style="width:90px">
+      <p><span>Rebecca Flex.</span> CEO at Company.</p>
+      <p>No one is better than John Doe.</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+    </div>
+
+    <div class="container-reviews">
+      <img src="/w3images/avatar_g2.jpg" alt="Avatar" style="width:90px">
+      <p><span>Rebecca Flex.</span> CEO at Company.</p>
+      <p>No one is better than John Doe.</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+    </div>
   </section>
 
   <section class="subscribe-section">
+    <img class="coffebeans1" src="assets/coffeebeans.png" alt="coffeebeans">
     <form action="/action_page.php">
-  <div class="container">
-    <h2>Join in and get 15% Off!</h2>
-    <p> Lorem ipsum text about why you should subscribe to our newsletter blabla.</p>
-  </div>
+      <div class="container">
+        <h2>Join in and get 15% Off!</h2>
+        <p> Lorem ipsum text about why you should subscribe to our newsletter blabla.</p>
+      </div>
 
-  <div class="container" style="background-color:white">
-    <input type="text" placeholder="Email address" name="mail" required>
-  </div>
+      <div class="container">
+        <input type="text" placeholder="Email address" name="mail" required>
+      </div>
 
-  <div class="container">
-    <input type="submit" value="Subscribe">
-  </div>
-</form>
-
+      <div class="container">
+        <input type="submit" value="Subscribe">
+      </div>
+    </form>
+    <img class="coffebeans2" src="assets/coffeebeans.png" alt="coffeebeans">
   </section>
-
-
-
-
-
 
   <footer class="footer">
     <div class="container">
       <div class="row">
         <div class="footer-col">
-          <h4>Coffee</h4>
+          <h4>COFFEE</h4>
+        </div>
+        <div class="footer-col">
+          <h4>PRIVACY</h4>
           <ul>
             <li><a href="#">about us</a></li>
             <li><a href="#">our services</a></li>
@@ -184,7 +228,16 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>get help</h4>
+          <h4>SERVICES</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>ABOUT US</h4>
           <ul>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">shipping</a></li>
@@ -194,7 +247,7 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>online shop</h4>
+          <h4>INFORMATION</h4>
           <ul>
             <li><a href="#">watch</a></li>
             <li><a href="#">bag</a></li>
@@ -203,12 +256,12 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>follow us</h4>
+          <h4>SOCIAL MEDIA</h4>
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-facebook-f">fb</i></a>
+            <a href="#"><i class="fab fa-twitter">x</i></a>
+            <a href="#"><i class="fab fa-instagram">IG</i></a>
+            <a href="#"><i class="fab fa-linkedin-in">Linkedin</i></a>
           </div>
         </div>
       </div>

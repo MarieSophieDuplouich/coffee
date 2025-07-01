@@ -5,7 +5,6 @@ s'adaptera à la taille de la section. */
 
 * {
   border: black 1px solid;
-  background-color: #E2D9C8;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,59 +15,42 @@ body {
   font-family: "Poppins";
   font-weight: 400;
   font-style: normal;
-  color: #F1F0EE;
+  color: #30261C;
   font-size: 1.25em;
   text-align: center;
   background-color: #E2D9C8;
 }
 
-
-/* Style the header with a grey background and some padding */
-.header {
-  overflow: hidden;
+h3 {
   background-color: #F1F0EE;
-  padding: 20px 10px;
-  background-size: cover;
-  background-image: url("assets/breakslow-E6RTpqvOasU-unsplash.jpg");
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-.welcome-coffee{
-  background-color: none;
-}
-/* Style the header links */
-.header a {
-  float: left;
-  color: #30261C;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-}
-
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-/* Change the background color on mouse-over */
-.header a:hover {
-  background-color: #F1F0EE;
-  color: #30261C;
-}
-
-/* Style the active/current link*/
-.header a.active {
-  background-color: #30261C;
+h4 {
   color: #F1F0EE;
 }
 
-/* Float the link section to the right */
-.header-right {
-  float: right;
+/* Style the header with a grey background and some padding */
+
+header{
+  background-image: url(assets/coffee-after-before-hair-transplant.png);
+  background-size: cover;
+  
 }
+.welcome-coffee {
+  background-color: none;
+}
+
+.icons-section {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  column-gap: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 
 button {
   background-color: #F1F0EE;
@@ -89,6 +71,9 @@ button:hover {
 
 }
 
+.hero-section {
+  background-color: #F1F0EE;
+}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -96,15 +81,17 @@ button:hover {
   margin: auto;
   text-align: center;
   font-family: "Balthazar";
+  color: #30261C;
+  ;
 }
 
 .price {
-  color: #F1F0EE;
+  color: #30261C;
   font-size: 22px;
 }
 
 .card button {
-  border: none;
+  border-color: #F1F0EE;
   outline: 0;
   padding: 12px;
   color: #F1F0EE;
@@ -113,28 +100,91 @@ button:hover {
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  text-decoration: none;
+
 }
 
 .card button:hover {
-  opacity: 0.7;
+  background-color: #F1F0EE;
+  color: #30261C;
+
 }
 
+.gallery-coffee,
+.gallery-desert {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 1%;
 
-footer {
+}
+
+footer {}
+
+footer .row {
+
   background-color: #30261C;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  column-gap: 1%;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer li a {
+
+  text-decoration: none;
+  color: #F1F0EE;
 }
 
 
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
+
+
+/* partie avis avec les étoiles plus media queries */
+.checked {
+  color: orange;
+}
+
+.reviews-section {
+  background-color: #F1F0EE;
+  color: #30261C;
+}
+
+.container-reviews {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container-reviews::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container-reviews img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container-reviews span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container-reviews {
+    text-align: center;
   }
 
-  .header-right {
+  .container-reviews img {
+    margin: auto;
     float: none;
+    display: block;
   }
 }

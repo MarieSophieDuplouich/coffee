@@ -36,19 +36,19 @@ h4 {
 header {
   background-image: url(assets/coffee-after-before-hair-transplant.png);
   background-size: cover;
- 
+
 }
 
 nav {
-  
+
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto;
- 
+
 }
 
 nav a {
   text-decoration: none;
-  color:#F1F0EE;
+  color: #F1F0EE;
 }
 
 .welcome-coffee {
@@ -202,6 +202,17 @@ footer li a {
   }
 }
 
+.coffeebeans1 {
+   
+  transform: scaleX(2);
+
+}
+
+.coffeebeans2 {
+
+  transform: scaleX(-1);
+
+}
 
 /* Responsivity */
 

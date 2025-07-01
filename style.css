@@ -33,11 +33,24 @@ h4 {
 
 /* Style the header with a grey background and some padding */
 
-header{
+header {
   background-image: url(assets/coffee-after-before-hair-transplant.png);
   background-size: cover;
-  
+ 
 }
+
+nav {
+  
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+ 
+}
+
+nav a {
+  text-decoration: none;
+  color:#F1F0EE;
+}
+
 .welcome-coffee {
   background-color: none;
 }
@@ -118,7 +131,7 @@ button:hover {
 
 }
 
-footer {}
+/* footer {} */
 
 footer .row {
 
@@ -186,5 +199,43 @@ footer li a {
     margin: auto;
     float: none;
     display: block;
+  }
+}
+
+
+/* Responsivity */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: red;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: green;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: violet;
   }
 }

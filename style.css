@@ -51,8 +51,19 @@ nav {
 }
 
 nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: #F1F0EE;
+
+}
+
+.fa.fa-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -62,13 +73,22 @@ nav a:hover {
 
 .welcome-coffee {
   background-color: none;
+  display: flex;
+  justify-content: center;
+  gap: 3%;
 
 }
 
 #welcome-coffee {
   color: #F1F0EE !important;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
+#ordernow{
+ order: -3;
+}
+/* djeufhusdfyv */
 .icons-section {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -90,6 +110,7 @@ button {
   border-radius: 50px;
   border-color: #F1F0EE;
   cursor: pointer;
+  margin-bottom: 5%;
 }
 
 button:hover {
@@ -100,6 +121,7 @@ button:hover {
 
 .hero-section {
   background-color: #F1F0EE;
+  background-size: cover;
 }
 
 .card {
@@ -147,14 +169,15 @@ button:hover {
 
 
 .coffeebeanshand {
- width: 50%;
+  width: 300px;
 
 }
 
 .coffeebeanscup {
- width: 50%;
+  width: 300px;
 
 }
+
 /* footer */
 
 footer .row {
@@ -225,15 +248,14 @@ footer li a {
 
 .coffeebeans1 {
 
- 
-  width: 50%;
+  width: 300px;
 
 }
 
 .coffeebeans2 {
 
   transform: scaleX(-1);
-  width: 50%;
+  width: 300px;
 
 }
 
@@ -245,18 +267,66 @@ footer li a {
     background-color: blue;
   }
 
-  footer .row{
+  nav {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 1rem;
+    justify-items: center;
+
+  }
+
+
+  .icons-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    justify-items: center;
+    row-gap: 1rem;
+
+  }
+
+
+  footer .row {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
     gap: 1rem;
   }
+
+  .gallery-coffee,
+  .gallery-desert {
+    display: inline-grid;
+    grid-template-columns: auto;
+    column-gap: 1%;
+    row-gap: 1%;
+
+  }
 }
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   body {
     background-color: yellow;
+
+  }
+
+  .gallery-coffee,
+  .gallery-desert {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: 1%;
+    row-gap: 1%;
+
+  }
+
+  footer .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 1rem;
   }
 
 }
@@ -265,9 +335,18 @@ footer li a {
 @media only screen and (min-width: 768px) {
   body {
     background-color: red;
-    
+
   }
-  
+
+  .gallery-coffee,
+  .gallery-desert {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: 1%;
+    row-gap: 1%;
+
+  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

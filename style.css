@@ -276,6 +276,11 @@ footer li a {
 .reviews-section {
   background-color: #F1F0EE;
   color: #30261C;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap : 3%;
 }
 
 .container-reviews {
@@ -371,6 +376,10 @@ footer li a {
     column-gap: 5%;
 
   }
+.reviews-section {
+display: none;
+
+}
 
 
   footer .row {
@@ -395,7 +404,6 @@ footer li a {
     grid-template-columns: auto auto;
     column-gap: 1%;
     row-gap: 1%;
-
   }
 
 

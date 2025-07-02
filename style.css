@@ -72,9 +72,13 @@ nav a:hover {
 }
 
 .welcome-coffee {
-  background-color: none;
+  background-color: transparent;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  max-width: 600px;
+  padding-left: 5%;
   gap: 3%;
 
 }
@@ -86,9 +90,10 @@ nav a:hover {
 }
 
 #ordernow{
- order: -3;
+align-self: flex-start;
+order:0;
 }
-/* djeufhusdfyv */
+
 .icons-section {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -354,6 +359,14 @@ footer li a {
   body {
     background-color: green;
   }
+
+  .gallery-coffee,
+.gallery-desert {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 1%;
+
+}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -361,4 +374,12 @@ footer li a {
   body {
     background-color: violet;
   }
+
+  .gallery-coffee,
+.gallery-desert {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 1%;
+
+}
 }

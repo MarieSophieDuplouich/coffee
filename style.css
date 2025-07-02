@@ -172,19 +172,20 @@ button:hover {
 
 }
 
-.subscribe-section{
-display: grid;
-grid-template-columns: auto auto auto;
+.subscribe-section {
+  display: grid;
+  grid-template-columns: auto auto auto;
   align-items: center;
-column-gap: 5%;
+  column-gap: 5%;
 
 }
 
-.container-input-explore input{
-
+.container-input-explore input {
+  
   background-color: #F1F0EE;
   color: #30261C;
-  text-align: center;
+  display: flex;
+ align-self: flex-start;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
@@ -269,28 +270,18 @@ footer li a {
   margin-right: 15px;
 }
 
-@media (max-width: 500px) {
-  .container-reviews {
-    text-align: center;
-  }
-
-  .container-reviews img {
-    margin: auto;
-    float: none;
-    display: block;
-  }
-}
 
 .coffeebeans1 {
 
-  width: 300px;
+  width: 100%;
+  transform: scaleY(-1);
 
 }
 
 .coffeebeans2 {
 
   transform: scaleX(-1);
-  width: 300px;
+  width: 100%;
 
 }
 
@@ -336,8 +327,17 @@ footer li a {
     grid-template-columns: auto;
     column-gap: 1%;
     row-gap: 1%;
+  }
+
+  .subscribe-section {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    column-gap: 5%;
 
   }
+
+
 }
 
 
@@ -410,5 +410,17 @@ footer li a {
     grid-template-columns: auto auto auto auto;
     column-gap: 1%;
 
+  }
+}
+/* reviews section responsivity */
+@media (max-width: 500px) {
+  .container-reviews {
+    text-align: center;
+  }
+
+  .container-reviews img {
+    margin: auto;
+    float: none;
+    display: block;
   }
 }

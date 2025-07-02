@@ -89,9 +89,9 @@ nav a:hover {
   margin-bottom: 5%;
 }
 
-#ordernow{
-align-self: flex-start;
-order:0;
+#ordernow {
+  align-self: flex-start;
+  order: 0;
 }
 
 .icons-section {
@@ -172,14 +172,44 @@ button:hover {
 
 }
 
+.subscribe-section{
+display: grid;
+grid-template-columns: auto auto auto;
+  align-items: center;
+column-gap: 5%;
+
+}
+
+.container-input-explore input{
+
+  background-color: #F1F0EE;
+  color: #30261C;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 50px;
+  border-color: #F1F0EE;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+
+
+.container-input-explore input:hover {
+  background-color: #30261C;
+  color: #F1F0EE;
+
+}
 
 .coffeebeanshand {
-  width: 300px;
+  width: 100%;
+
 
 }
 
 .coffeebeanscup {
-  width: 300px;
+  width: 100%;
 
 }
 
@@ -361,12 +391,11 @@ footer li a {
   }
 
   .gallery-coffee,
-.gallery-desert {
-  display: inline-grid;
-  grid-template-columns: auto auto auto auto;
-  column-gap: 1%;
-
-}
+  .gallery-desert {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 1%;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -376,10 +405,10 @@ footer li a {
   }
 
   .gallery-coffee,
-.gallery-desert {
-  display: inline-grid;
-  grid-template-columns: auto auto auto auto;
-  column-gap: 1%;
+  .gallery-desert {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 1%;
 
-}
+  }
 }

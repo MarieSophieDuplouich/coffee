@@ -27,6 +27,10 @@ h3 {
   margin-bottom: 5%;
 }
 
+i {
+  color: #F1F0EE;
+}
+
 h4 {
   color: #F1F0EE;
 }
@@ -51,8 +55,18 @@ nav a {
   color: #F1F0EE;
 }
 
+nav a:hover {
+  background-color: #30261C;
+  color: #F1F0EE;
+}
+
 .welcome-coffee {
   background-color: none;
+
+}
+
+#welcome-coffee {
+  color: #F1F0EE !important;
 }
 
 .icons-section {
@@ -131,10 +145,20 @@ button:hover {
 
 }
 
-/* footer {} */
+
+.coffeebeanshand {
+ width: 50%;
+
+}
+
+.coffeebeanscup {
+ width: 50%;
+
+}
+/* footer */
 
 footer .row {
-
+  padding-top: 2%;
   background-color: #30261C;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
@@ -150,9 +174,6 @@ footer li a {
   text-decoration: none;
   color: #F1F0EE;
 }
-
-
-
 
 
 /* partie avis avec les étoiles plus media queries */
@@ -203,14 +224,16 @@ footer li a {
 }
 
 .coffeebeans1 {
-   
-  transform: scaleX(2);
+
+ 
+  width: 50%;
 
 }
 
 .coffeebeans2 {
 
   transform: scaleX(-1);
+  width: 50%;
 
 }
 
@@ -221,6 +244,13 @@ footer li a {
   body {
     background-color: blue;
   }
+
+  footer .row{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 1rem;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -228,13 +258,16 @@ footer li a {
   body {
     background-color: yellow;
   }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   body {
     background-color: red;
+    
   }
+  
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

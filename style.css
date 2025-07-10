@@ -25,8 +25,9 @@ h3 {
   background-color: #F1F0EE;
   margin-top: 1.5rem;
 }
-.section-title{
-text-align: center;
+
+.section-title {
+  text-align: center;
 }
 
 i {
@@ -128,6 +129,11 @@ button:hover {
 
 .hero-section {
   background-color: #F1F0EE;
+  padding: 4rem 2rem;
+  /* pour mettre de l'espace autour du contenu */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
@@ -169,21 +175,36 @@ button:hover {
 .gallery-coffee,
 .gallery-desert {
   display: inline-grid;
-  grid-template-columns: auto auto auto auto;
-  column-gap: 1%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* column-gap: 1%; */
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 3rem;
 
 }
 
-.subscribe-section {
+/* partie inscription et getoff réduction généralités */
+.subscribe-section,
+.subscribe-section-getoff {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px,3fr));
+  /* pour expliquer cette ligne   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
   align-items: center;
-  column-gap: 5%;
+  column-gap: 1rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.subscribe-section-getoff {
+
+  margin-top: 3rem;
 }
 
 .container-input-explore input {
-
+  width: 100%;
   background-color: #30261C;
   color: #F1F0EE;
   display: flex;
@@ -205,21 +226,14 @@ button:hover {
 
 }
 
-/* partie getoff réduction */
+/* partie getoff réduction ses inputs email etc ... */
 
-.subscribe-section-getoff {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  align-items: center;
-  column-gap: 5%;
-
-}
 
 .container-inputemails input {
   background-color: #30261C;
   color: #F1F0EE;
   display: flex;
-  align-self: flex-start;
+  align-self: center;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
@@ -228,6 +242,7 @@ button:hover {
   border-color: #F1F0EE;
   cursor: pointer;
   margin-bottom: 5%;
+  width: 100%;
 }
 
 
@@ -291,8 +306,6 @@ footer li a {
   border-radius: 5px;
   padding: 16px;
   margin: 16px 0;
-
-
 }
 
 .container-reviews::after {
@@ -314,14 +327,16 @@ footer li a {
 
 
 .coffeebeans1 {
-
+  top: 0;
+  left: 0;
   width: 100%;
   transform: scaleY(-1);
 
 }
 
 .coffeebeans2 {
-
+  top: 0;
+  left: 0;
   transform: scaleX(-1);
   width: 100%;
 
@@ -345,6 +360,10 @@ footer li a {
 
   }
 
+  .welcome-coffee {
+
+    padding-left: 0;
+  }
 
   .icons-section {
     display: grid;
@@ -371,17 +390,16 @@ footer li a {
     row-gap: 1%;
   }
 
-  .subscribe-section {
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    column-gap: 5%;
+  .subscribe-section,
+  .subscribe-section-getoff {
+    grid-template-columns: 1fr;
+    text-align: center;
 
   }
 
   .reviews-section {
-    display: none;
-
+    display: flex;
+    flex-direction: column;
   }
 
 
@@ -396,24 +414,27 @@ footer li a {
   #ordernow {
     align-self: center !important;
   }
-.container-input-explore,
-.container-inputemails {
-  display: flex;
-  justify-content: center;
-}
 
-.coffeebeans1,.coffeebeans2{
-  width: 100%;
-  min-height: 200px;
-  object-fit: cover;
-}
+  .container-input-explore,
+  .container-inputemails {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .coffeebeans1,
+  .coffeebeans2 {
+    width: 100%;
+    min-height: 200px;
+    object-fit: cover;
+  }
 
 
 }
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
   /* body {
     background-color: yellow;
 
@@ -427,11 +448,20 @@ footer li a {
     row-gap: 1%;
   }
 
+  .subscribe-section,
+  .subscribe-section-getoff {
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    text-align: center;
+  }
 
+  /* nv */
 }
 
+
+
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   /* body {
     background-color: red;
 
@@ -445,6 +475,16 @@ footer li a {
     row-gap: 1%;
 
   }
+
+  .subscribe-section,
+  .subscribe-section-getoff {
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  /* nv */
+
 
 }
 

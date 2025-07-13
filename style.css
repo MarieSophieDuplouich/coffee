@@ -185,6 +185,14 @@ button:hover {
 
 }
 
+.gallery-coffee h4,
+.gallery-desert h4{
+
+  color: #30261C;
+
+}
+
+
 /* partie inscription et getoff réduction généralités */
 .subscribe-section,
 .subscribe-section-getoff {

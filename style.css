@@ -144,7 +144,14 @@ button:hover {
   text-align: center;
   font-family: "Balthazar";
   color: #30261C;
-  ;
+
+}
+
+.card  img{
+    width: 100%;
+    height: 300px;
+  object-fit: cover; 
+  /* mot magic ici */
 }
 
 .price {
@@ -182,8 +189,11 @@ button:hover {
   width: 100%;
   max-width: 1200px;
   margin-bottom: 3rem;
+  
 
 }
+
+
 
 .gallery-coffee h4,
 .gallery-desert h4{
